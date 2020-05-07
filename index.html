@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" media="print" href="assets/css/print.css">
+    <link rel="stylesheet" media="screen" href="assets/css/screen.css">
+    <link rel="stylesheet" media="all" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+
+</head>
+
+<body>
+
+    <div class="contenedor py-5">
+
+        <h1>Media Queries</h1>
+        <div class="cols">
+            <h3>All</h3>
+            <p>Aplicado para todos los dispositivos.</p>
+        </div>
+        <div class="cols">
+            <h3>Print</h3>
+            <p>Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de
+                impresión. </p>
+        </div>
+        <div class="cols">
+            <p class="text-print">Para testear Print desde Google Chrome</p>
+            <img class="img-fluid img-print" src="assets/img/emular-print.png" alt="">
+        </div>
+
+        <div class="cols">
+            <h3>Screen</h3>
+            <p>Destinado a principalmente a pantallas de computadora a color.</p>
+        </div>
+
+        <div class="cols my-5">
+        <h3>speech</h3>
+        <p>Destinado a sintetizadores de voz. Nota: CSS2 tenía un tipo de medio similar llamado 'aural' para este
+            propósito.</p>
+
+        <a target="_blank" href="https://www.w3.org/TR/css-speech-1/"> <button class="btn btn-large btn-success"> Speech
+            </button></a>
+        </div>
+
+
+        <h3>Only</h3>
+        <p>El operador only previene que navegadores antiguos que no soportan queries con funciones apliquen los estilos
+            asignados:</p>
+
+        <p>"link rel="stylesheet" media="only screen and ()" href="Ejemplo.css" "</p>
+
+
+
+        <h3>Breakpoints de la W3school</h3>
+
+        <ul class="breakpoints">
+            <li>/* Extra small devices (phones, 600px and down) */ <br>
+                @media only screen and (max-width: 600px) {...}</li>
+            <li>/* Small devices (portrait tablets and large phones, 600px and up) */ <br>
+                @media only screen and (min-width: 600px) {...}</li>
+            <li>/* Medium devices (landscape tablets, 768px and up) */ <br>
+                @media only screen and (min-width: 768px) {...}</li>
+            <li>/* Large devices (laptops/desktops, 992px and up) */ <br>
+                @media only screen and (min-width: 992px) {...}</li>
+            <li>/* Extra large devices (large laptops and desktops, 1200px and up) */ <br>
+                @media only screen and (min-width: 1200px) {...} </li>
+        </ul>
+
+
+        <a target="_blank" href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"> <button
+                class="btn btn-large btn-primary"> Media queries en W3schools</button></a>
+
+
+        <h2>Ver fuentes</h2>
+
+        <a target="_blank" href="https://developer.mozilla.org/es/docs/CSS/Media_queries"> <button
+                class="link-mozilla btn btn-large btn-danger"> Ver más sobre media queries en Mozilla
+                Developer</button></a>
+
+        <a target="_blank" href="https://css-tricks.com/css-media-queries/"> <button
+                class="link-tricks btn btn-large btn-info"> Ver más sobre media queries en CSS Tricks</button></a>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

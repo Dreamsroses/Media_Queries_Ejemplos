@@ -1,0 +1,31 @@
+/* Si el valor es inferior a 369px o superior a 1201 entra en esta categoria */
+body{
+    background-color: springgreen;
+}
+
+/* Para imprimir desde Celulares hasta un maximo de 370px*/
+@media print and (max-width: 370px){
+    body {
+        background-color: yellow;
+        color: red;
+    }
+}
+
+/* Para imprimir desde dispositos entre 371 y 1200px*/
+@media print and (min-width: 371px) and (max-width: 1200px){
+    body {
+        background-color: purple;
+        color: white;
+    }
+.img-print{
+    width: 50%;
+}
+.text-print{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: snow;
+}
+}

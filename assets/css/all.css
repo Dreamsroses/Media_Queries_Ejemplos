@@ -1,0 +1,69 @@
+body {
+    background-color: peru;
+}
+
+.breakpoints{
+    line-height: 3;
+}
+
+
+/* Orientacion de la pantalla */
+/* @media all and (orientation:portrait) {
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+        background-color: indianred;
+    }
+}
+
+@media all and (orientation:landscape) {
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5rem;
+        background-color: teal;
+    }
+} */
+
+
+/* Si 900px esta como ultima declaración css no considerara el css de 600px con color steelblue */
+
+@media (max-width: 600px) {
+    body {
+        background-color: steelblue;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        background-color: yellowgreen;
+    }
+
+    .btn-info:hover {
+        background-color: seashell;
+        border: silver;
+        color: teal;
+    }
+
+    .link-tricks,
+    .link-mozilla {
+        width: 40%;
+        height: 140px;
+    }
+}
+
+
+/* Fijar minimo y maximo para no tener errores como en el css anterior */
+
+/* de 600 a 899 color steelblue */
+/* @media only all and (min-width: 400px) and (max-width: 899px) {
+    body {
+        background-color: steelblue;
+    }
+} */
+
+/* de 900 a 1200 color yellowgreen */
+/* @media only all and (min-width: 900px) and (max-width: 1200px) {
+    body {
+        background-color: yellowgreen;
+    }
+} */
